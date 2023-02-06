@@ -74,13 +74,20 @@ WSGI_APPLICATION = 'kilimo.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'school',
+#         'USER': 'wairimu',
+#         'PASSWORD':'password',
+
+#     }
+# }
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'school',
-        'USER': 'wairimu',
-        'PASSWORD':'password',
-        
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
 }
 

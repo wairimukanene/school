@@ -1,4 +1,4 @@
-#!/home/wairimu/Documents/school/venv/bin/python3
+#!/home/clinton/sandbox/django-tuts/school/venv/bin/python
 # -*- coding: utf-8 -*-
 import re
 import sys

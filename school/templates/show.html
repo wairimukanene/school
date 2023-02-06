@@ -22,14 +22,14 @@
             </tr>
         </thead>
         <tbody>
-            {% for Form1A in Form1As %}
+            {% for student in form1As%}
             <tr>
-                <td>{{student.id }}</td>
                 <td>{{student.name}}</td>
+                <td>{{student.stream}}</td>
                 <td>{{student.email}}</td>
                 <td>{{student.contact}}</td>
                 <td>
-                    <a href="/edit/{{ student.id }}">Edit</a>
+                    <a href={% url 'edit' student.id %}>Edit</a>
                     <a href="/delete/{{student.id}}">Delete</a>
                 </td>
             </tr>
@@ -38,7 +38,7 @@
     </table>
     <br>
     <br>
-    <button><a style="color:white;" href="/school">Add New Record</a></button>
+    <button><a style="color:white;" href={% url 'school' %}>Add New Record</a></button>
 </body>
 
 </html>
